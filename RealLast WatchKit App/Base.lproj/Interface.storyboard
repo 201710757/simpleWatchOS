@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RealLast_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Count" id="aIj-Bc-2FS"/>
+                        <label alignment="left" text="Timer" id="zYI-50-fxT"/>
+                        <button width="1" alignment="left" title="Start" id="4bt-qE-8zX">
+                            <connections>
+                                <action selector="startButton" destination="AgC-eL-Hgc" id="WgO-F8-mk5"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="CountDescent" id="iw0-Xg-3xP">
+                            <connections>
+                                <action selector="countDescent" destination="AgC-eL-Hgc" id="f2M-vY-U7l"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Reset" id="5h6-fz-2Bu">
+                            <connections>
+                                <action selector="resetButtonClicked" destination="AgC-eL-Hgc" id="9wx-yy-HKe"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="countTextLabel" destination="aIj-Bc-2FS" id="2Oc-FM-ls8"/>
+                        <outlet property="timerText" destination="zYI-50-fxT" id="LCn-c0-Wu8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+    </scenes>
+</document>
